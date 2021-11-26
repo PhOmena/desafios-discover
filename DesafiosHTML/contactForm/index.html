@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <h1>Formulário</h1>
+            <fieldset class="field-container">
+                <legend>Entre em contato</legend>
+
+                <label>Assunto:</label>
+                <select type="text">
+                    <option value="suport">Suporte</option>
+                    <option value="sugestion" selected>Sugestão</option>
+                    <option value="complain">Reclamação</option>
+                </select>
+
+                <label for="input-name" required>Nome Completo: </label>
+                <input placeholder="Escreva seu nome" id="input-name" type="text">
+                
+                <label for="input-email" required>E-mail: </label>
+                <input placeholder="Escreva seu e-mail" id="input-email" type="email">
+                
+                <label for="textarea-message">Mensagem: </label>
+                <textarea placeholder="Escreva uma mensagem" id="textarea-message"></textarea>
+                
+                <label>Aceito Receber por e-mail </label>
+                <input type="checkbox" checked>
+
+                <button type="submit">Enviar</button>
+                    
+            </fieldset>
+          
+        </form>
+ 
+    </div>
+</body>
+</html>
