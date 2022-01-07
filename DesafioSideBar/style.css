@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap');
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+      --light-grey: #dce4e3;
+    --text-color: #084236;
+  }
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--body-bg-color)
+}
+
+.container nav {
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: red;
+    transition: .5s;
+    overflow: hidden;
+}
+
+
+.container nav.active {
+    width: 300px;
+}
+
+.continaer nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.continaer nav ul li {
+    list-style: none;
+    width: 100%;
+    position: relative;
+
+}
+
+.continaer nav ul li a:hover {
+    color: var(--bg-primary);
+}
+
+.continaer nav ul li:hover a::before {
+    background-color: var(--bg-active);
+    width: 100%;
+}
+
+.continaer nav ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cl-text);
+    transition: .2s;
+}
+
+.continaer nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: .2s;
+}
