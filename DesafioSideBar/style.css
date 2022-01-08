@@ -3,38 +3,45 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 240px;
+    width: 78px;
     background-color: var(--green);
     padding: 6px 14px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active {
+    width: 240px;
 }
 
 .sidebar .logo_content .logo {
-    color: #fff;
     display: flex;
     height: 50px;
     width: 100%;
     align-items: center;
+    opacity: 0;
+    cursor: none;
+    transition: all 0.5s ease;
 }
 
-.sidebar .logo_content .logo img {
-    margin-right: 5px;
-}
-
-.sidebar .logo_content .logo .logo_name {
-    font-size: 20px;
-    font-weight: 400;
+.sidebar.active .logo_content .logo {
+    opacity: 1;
+    cursor: none;
 }
 
 .sidebar #btn {
     position: absolute;
-    left: 90%;
+    left: 55%;
     top: 6px;
-    font-size: 20px;
-    height: 50px;
-    width: 25px;
-    text-align: center;
-    line-height: 50px;
+    height: 60px;
+    width: 35px;
+    line-height: 70px;
     transform: translateX(-50%);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
 }
 
 .sidebar ul {
@@ -49,6 +56,7 @@
     list-style: none;
     line-height: 50px;
     border-radius: 12px;
+    margin-top: 5px;
 }
 
 .sidebar ul li input {
@@ -60,10 +68,10 @@
     border-radius: 12px;
     outline: none;
     border: none;
-    background-color: #f5f5f5;
+    background-color: var(--light-green);
     padding-left: 50px;
     font-size: 15px;
-    color: #333;
+    color: var(--text-color);
 }
 
 .sidebar ul li .icon_search {
@@ -72,19 +80,38 @@
     z-index: 99;
     color: #fff;
     font-size: 22px;
+    transition: all 0.5s ease;
+}
+
+.sidebar ul li .icon_search:hover {
+    cursor: pointer;
 }
 
 .sidebar ul li a {
-    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
+    border-radius: 12px;
+    white-space: nowrap;
+    color: var(--text-color);
 }
 
+
 .sidebar ul li a:hover {
-    color: var(--light-gray);
+    color: var(--text-color);
     background-color: var(--light-green);
+}
+
+
+.sidebar ul li a span {
+    color: var(--text-color);
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.sidebar.active ul li a span {
+    opacity: 1;
 }
 
 .sidebar ul li img {
@@ -97,46 +124,94 @@
 
 .sidebar .profile_content {
     position: absolute;
+    background-color: var(--light-green);
     color: #fff;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
-
 
 .sidebar .profile_content .profile {
     position: relative;
     padding: 10px 6px;
     height: 60px;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active .profile_content .profile {
+    background: none;
 }
 
 .sidebar .profile_content .profile .profile_details {
     display: flex;
     align-items: center;
+    opacity: 0;
+    cursor: none;
+    white-space: nowrap;
+}
+
+.sidebar.active .profile_content .profile .profile_details {
+    opacity: 1;
+    cursor: auto;
 }
 
 .sidebar .profile_content .profile .profile_details img {
     height: 45px;
     width: 45px;
     object-fit: cover;
-    border-radius: 12px
+    border-radius: 12px;
 }
 
 .sidebar .profile_content .profile .profile_details .name_job {
-    margin-right: 10px;  
+    margin:  0 10px;
+    color: var(--text-color);
 }
 
 .sidebar .profile_content .profile .profile_details .name {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
+    color: var(--text-color);
 }
 
 .sidebar .profile_content .profile .profile_details .job {
-    font-size: 12px;
+    font-size: 14px;
+    color: var(--text-color);
 }
 
 .sidebar .profile_content .profile #log_out {
     position: absolute;
-    left: 88%;
-    bottom: 5px;
+    left: 50%;
+    bottom: 12px;
     transform: translateX(-50%);
+    min-width: 30px;
+    line-height: 50px;
+    width: 30px;
+    border-radius: 12px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.sidebar.active .profile_content .profile #log_out {
+    left: 88%;
+    cursor: pointer;
+}
+
+.home_content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 78px);
+    left: 78px;
+    transition: all 0.5s ease;
+    padding: 13px;
+}
+
+.home_content .text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.sidebar.active ~ .home_content {
+    width: calc(100% - 240px);
+    left: 240px;
 }
