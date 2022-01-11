@@ -231,6 +231,16 @@
   background-color: var(--switcher);
 }
 
+/* rocketcards */
+#rc {
+  width: 35%;
+  height: 100px;
+}
+
+#canva-rc {
+  background-color: var(--rc);
+}
+
 /* rocketflix */
 #flix {
   width: 35%;
