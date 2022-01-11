@@ -58,6 +58,12 @@ h2 {
 
 .div-container .main-container .top-container img {
     border-radius: 10px;
+    width: 100%;
+    padding: 40px;
+}
+
+.div-container .main-container .top-container figcaption {
+    padding: 40px;
 }
 
 .div-container .main-container .bottom-container {

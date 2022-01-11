@@ -1,0 +1,252 @@
+.container-header {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.container-header .header {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--purple);
+}
+
+.container-header .header .logo {
+  color: var(--white);
+}
+
+.container-header .header .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.container-header .header .nav-links a {
+  color: var(--white);
+  cursor: pointer;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 500ms ease;
+}
+
+.container-header .header .nav-links a:hover {
+  background-color: var(--white);
+  color: var(--purple);
+}
+
+.container-cards {
+  width: 100%;
+  height: 200%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 2rem;
+  background-color: var(--ice);
+  padding: 50px;
+}
+
+.container-cards .cards {
+  width: 22rem;
+  height: 30rem;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -90px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.container-cards .cards .canva {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark);
+}
+
+.container-cards .cards .card-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container-cards .cards .card-content h1 {
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+}
+
+.container-cards .cards .card-content p {
+  font-size: 15px;
+}
+
+.container-cards .cards .technologies {
+  width: 100%;
+  height: 100%;
+}
+
+.container-cards .cards .technologies h1 {
+  font-size: 18px;
+  margin: 50px 0 10px 0;
+}
+
+.container-cards .cards .technologies .icons {
+  width: 100%;
+  height: 100%;
+}
+
+.container-cards .cards .technologies .icons #html, #css, #js {
+  width: 20px;
+}
+
+.container-cards .cards .buttons {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.container-cards .cards .buttons a {
+  text-decoration: none;
+  background-color: var(--purple);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: all 500ms ease;
+}
+
+.container-cards .cards .buttons a:hover {
+  background-color: var(--white);
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+.footer {
+  width: 100%;
+  height: 20%;
+  background-color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+/* waffle */
+#waffle {
+  width: 100%;
+  height: 100px;
+}
+
+#canva-waffle {
+  background-color: var(--recipe);
+}
+
+/* html */
+#htmls {
+  width: 100%;
+  height: 100px;
+}
+
+#canva-html {
+  background-color: var(--html);
+}
+
+/* rocketnews */
+#rn {
+  width: 100%;
+  height: 100px;
+}
+
+#canva-rn {
+  background-color: var(--rn);
+}
+
+/* sidebar */
+#vet {
+  width: 100%;
+  height: 100px;
+}
+
+#canva-vet {
+  background-color: var(--vet);
+}
+
+/* countdown */
+#count {
+  width: 100%;
+  height: 100px;
+}
+
+#canva-count {
+  background-color: var(--countdown);
+}
+
+/* socialtree */
+#tree {
+  width: 35%;
+  height: 100px;
+}
+
+#canva-tree {
+  background-color: var(--tree);
+}
+
+/* portfolio */
+#portfolio {
+  width: 35%;
+  height: 100px;
+}
+
+#canva-portfolio {
+  background-color: var(--profile);
+}
+
+/* themeswitcher */
+#switcher {
+  width: 35%;
+  height: 100px;
+}
+
+#canva-switcher {
+  background-color: var(--switcher);
+}
+
+/* rocketflix */
+#flix {
+  width: 35%;
+  height: 100px;
+}
+
+#canva-flix {
+  background-color: var(--rf);
+}
+
+/* maratonadiscover */
+#marathon {
+  width: 35%;
+  height: 100px;
+}
+
+#canva-marathon {
+  background-color: var(--devfinances);
+}
+
