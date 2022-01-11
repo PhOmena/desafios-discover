@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 14px;
-}
-
-html {
-    background-color: #f5f5f5;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 h1 {
     font-size: 26px
@@ -25,7 +7,7 @@ h2 {
     font-size: 18px
 }
 
-.div-container {
+.container {
     width: 100%;
     height: 100%;
     background-color: #2081C3;
@@ -36,40 +18,49 @@ h2 {
     padding: 20px
 }
 
-.div-container .main-container {
+.container .main-container {
     width: 70%;
     height: 100%;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 1px 5px 10px #000;
 }
 
-.div-container .main-container .top-container {
+.container .main-container .top-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.div-container .main-container .top-container h1 {
+.container .main-container .top-container h1 {
     width: 100%;
     text-align: center;
     padding: 20px;
 }
 
-.div-container .main-container .top-container img {
-    border-radius: 10px;
+.container .main-container .top-container figure {
     width: 100%;
-    padding: 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.div-container .main-container .top-container figcaption {
-    padding: 40px;
+.container .main-container .top-container img {
+    border-radius: 10px;
+    width: 50%;
 }
 
-.div-container .main-container .bottom-container {
-    padding: 40px;
+.container .main-container .bottom-container {
+    margin-left: 40px;
 }
 
-.div-container .main-container .bottom-container ul, p{
+.container .main-container .bottom-container ul, ol {
     padding: 20px;
+}
+
+.container .main-container .bottom-container p {
+    margin-bottom: 40px;  
 }
