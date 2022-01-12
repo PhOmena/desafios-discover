@@ -29,16 +29,18 @@ https://desafios-discover.vercel.app/
 
 ### 📱 Mobile
 <p align="center">
-<img width="200" src="./assets/mobile1.PNG" alt="Phone1">  
-<img width="200" src="./assets//mobile2.PNG" alt="Phone2">  
+    <img width="200" src="./assets/mobile1.PNG" alt="Phone1">  
+    <img width="200" src="./assets/mobile2.PNG" alt="Phone2">
+    <img width="200" src="./assets/mobile3.PNG" alt="Phone2">  
 </p>
 
 ---
   
 ### 💻 Desktop
 <p align="center">
-<img width="600" src="./assets/desk1.PNG" alt="Desktop1">  
-<img width="600" src="./assets/desk2.PNG" alt="Desktop2">  
+    <img width="600" src="./assets/desktop1.PNG" alt="Desktop1">  
+    <img width="600" src="./assets/desktop2.PNG" alt="Desktop2">
+    <img width="600" src="./assets/desktop3.PNG" alt="Desktop2">  
 </p>
 
 ---
