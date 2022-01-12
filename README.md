@@ -18,6 +18,9 @@ esclarecendo todas as dúvidas que tive durante minha jornada.
 #### 🔗 Visualização completa:
 https://desafios-discover.vercel.app/
 
+#### 🔗 Link do material do Discover no Notion:
+https://quartz-antimony-614.notion.site/Discover-a431f0a838344fb582cc317ed757f143
+
 ## 👨‍💻 Technologias Utilizadas
 <p display="block" align="left">
 <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
@@ -29,18 +32,18 @@ https://desafios-discover.vercel.app/
 
 ### 📱 Mobile
 <p align="center">
-    <img width="200" src="./assets/mobile1.PNG" alt="Phone1">  
-    <img width="200" src="./assets/mobile2.PNG" alt="Phone2">
-    <img width="200" src="./assets/mobile3.PNG" alt="Phone2">  
+    <img width="200" src="./.github/mobile1.PNG" alt="Phone1">  
+    <img width="200" src="./.github/mobile2.PNG" alt="Phone2">
+    <img width="200" src="./.github/mobile3.PNG" alt="Phone2">  
 </p>
 
 ---
   
 ### 💻 Desktop
 <p align="center">
-    <img width="600" src="./assets/desktop1.PNG" alt="Desktop1">  
-    <img width="600" src="./assets/desktop2.PNG" alt="Desktop2">
-    <img width="600" src="./assets/desktop3.PNG" alt="Desktop2">  
+    <img width="600" src="./.github/desktop1.PNG" alt="Desktop1">  
+    <img width="600" src="./.github/desktop2.PNG" alt="Desktop2">
+    <img width="600" src="./.github/desktop3.PNG" alt="Desktop2">  
 </p>
 
 ---
