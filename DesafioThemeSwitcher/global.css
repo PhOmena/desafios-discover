@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu&display=swap');
 
 :root {
-    --ice: #d4d4d4;
+    --ice: #EEEEEE;
     --dark: #0F0F10;
     --gold: #958044;
     --white: #FFFFFF;
@@ -10,28 +10,6 @@
     --black: #000000;
     --purple: #6846b8;
     --green: #03be57;
-
-    /*recipe*/
-    --recipe: #fcf58d;
-    /*html*/
-    --html: #66cae3;
-    /*rocketnews*/
-    --rn: #0F0F10;
-    /*sidebar*/
-    --vet: #8ed7c6;
-    /*countdown*/
-    --countdown: 
-    #ff7a7a;    
-    /*socialtree*/
-    --tree: #bae3ff;
-    /*profile*/
-    --profile: #e3e3e3;
-    /*switcher*/
-    --switcher: #e3e3e3;
-    /*rocketflix*/
-    --rf: #0F0F10;
-    /*devfinances*/
-    --devfinances: #3dd705;
 }
 
 * {
