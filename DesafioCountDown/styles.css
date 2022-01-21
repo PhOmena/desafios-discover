@@ -1,67 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu&display=swap');
 
 :root {
-    --ice: #EEEEEE;
-    --dark: #0F0F10;
-    --gold: #958044;
-    --white: #FFFFFF;
-    
-    /* rocketseat colors */
-    --black: #000000;
-    --purple: #6846b8;
-    --green: #03be57;
+  --black: #4D4C59;
+  --purple: #6C63FF;
+  --light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
 }
 
 * {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-html, body {
-    max-width: 100vw;
-    overflow-x: hidden;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .container {
-    width: 100vw;
-    height: 100vh;    
-    display: flex;
-    background-color: var(--dark);
+  width: 100vw;
+  height: 100vh;    
+  background-color: white;
 }
 
-.container .middle {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    gap: 2rem;
+.container .top {
+  position: absolute;
 }
 
-.container .middle img {
-    width: 5%;
+.container .form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.container .middle h1 {
-    color: var(--white);
+.container .form .countdown {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
 }
 
-.container .middle a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin-top: 40px;
-    width: 10rem;
-    height: 2rem;
-    border-radius: 8px;
-    background-color: var(--purple);
-    color: var(--white);
-    cursor: pointer;
+.container .form .countdown h1 {
+  color: var(--purple);
+  font-size: 60px;
+}
+
+.container .form .countdown .sign {
+  width: 30%;
+  height: 40px;
+  background-color: var(--purple);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container .form .countdown table {
+  width: 80%;
+}
+
+.container .form .countdown table thead tr th {
+  color: var(--text-color);
+  font-size: 10px;
+}
+
+.container .form .countdown table tbody tr td {
+  font-size: 60px;
+}
+
+.container .form .rocket img {
+  width: 100%;
 }

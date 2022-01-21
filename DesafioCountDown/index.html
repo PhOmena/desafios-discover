@@ -5,17 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="../globalstyle.css">
-    <title>RocketNews</title>
+    <link rel="stylesheet" href="./globalstyle.css">
+    <title>Desafio: CountDown</title>
 </head>
 <body>
    <div class="container">
-       <section class="middle">
-            <img src="../assets/sad.svg" alt="Carinha triste">
-            <h1>Error: 404 -  Page not found</h1>
-            <a href="../index.html">Voltar</a>
-       </section>
+        <img class= "top" src="./images/images/top-image.svg" alt="Svg fundo">
+        <div class="form">
+            <section class="countdown">
+                <h1>READY TO LAUNCH IN...</h1>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Dias</th>
+                        <th></th>
+                        <th>Horas</th>
+                        <th></th>
+                        <th>Minutos</th>
+                        <th></th>
+                        <th>Segundos</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>08</td>
+                        <td>:</td>
+                        <td>12</td>
+                        <td>:</td>
+                        <td>44</td>
+                        <td>:</td>
+                        <td>28</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                <p>Inscreva-se para ser alertado sobre o lançamento</p>
+                <button class="sign" onclick="">Inscreva-se</button>
+            </section>
+            <section class="rocket">
+                <img src="./images/images/rocket.svg" alt="Foguete">
+            </section>
+        </div>
    </div>
-
+   <script src="./script.js"></script>
 </body>
 </html>
