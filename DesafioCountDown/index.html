@@ -27,33 +27,45 @@
                         <th></th>
                       </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="timer">
                       <tr>
-                        <td>08</td>
+                        <td id="days"></td>
                         <td>:</td>
-                        <td>12</td>
+                        <td id="hours"></td>
                         <td>:</td>
-                        <td>44</td>
+                        <td id="minutes"></td>
                         <td>:</td>
-                        <td>28</td>
+                        <td id="seconds"></td>
                       </tr>
                     </tbody>
                   </table>
                 <p>Inscreva-se para ser alertado sobre o lançamento</p>
-                <button class="sign" onclick="">Inscreva-se</button>
+                <button class="sign" onclick="openModal.open()">Inscreva-se</button>
             </section>
             <section class="rocket">
                 <img src="./images/images/rocket.svg" alt="Foguete">
             </section>
         </div>
-        
-            <div class="modal-container">
-               <div class="container-form">
-        
-               </div>
+      </div>
+  
+      <div class="modal-container">
+          <div class="container-form">
+            <h1>Inscreva-se para embarcar nesse foguete</h1>
+            <form>
+              <p>Nome:
+                <input class="name-input" type="text">
+              </p>
+              <p>E-mail:
+                <input class="email-input" type="text">
+              </p>
+            </form>
+            <div class="btns">
+              <button class="btn-send" onclick="openModal.send()">Enviar</button>
+              <button class="btn-cancel" onclick="openModal.close()">Cancelar</button>
             </div>
-   </div>
-
+          </div>
+      </div>
+      
  
    <script src="./script.js"></script>
 </body>

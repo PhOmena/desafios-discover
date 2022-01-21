@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Ubuntu&display=swap');
+
+:root {
+  --black: #4D4C59;
+  --purple: #6C63FF;
+  --light-grey: #C8C8C8;
+  --text-color: #9C9AB6;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+}
