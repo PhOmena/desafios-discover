@@ -60,7 +60,7 @@ const countDown = (time) => {
 }
 
 const restTime = () => {
-    const eventDate = new Date ('2022-01-29 20:22:00');
+    const eventDate = new Date ('2022-2-29 20:22:00');
     const today = Date.now();
     return Math.floor((eventDate - today) / 1000);
 }
