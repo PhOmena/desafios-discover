@@ -1,6 +1,6 @@
 .container {
     width: 100vw;
-    height: 200vh;    
+    height: 230vh;    
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: var(--body-bg-color);
@@ -12,21 +12,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
 }
 
+/*=========Profile=========*/
+
 .container .sidebar .profile {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width: 348px;
-    height: 292px;
-    left: 40px;
-    top: 40px;
-    border-radius: 30px;
+    width: 100%;
+    height: 20%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--bg-cards);
+    border-radius: 20px;
 }
 
 .container .sidebar .profile img {
@@ -35,127 +36,160 @@
     border: 2px solid var(--green);
 }
 
-.container .sidebar .profile .namertag {
+.container .sidebar .profile .namertags {
     text-align: center;
     color: var(--text-color);
     margin-top: -70px;
 }
 
-.container .sidebar .profile .namertag h1 {
+.container .sidebar .profile .namertags h1 {
     font-weight: bold;
     font-size: 23px;
     line-height: 40px;
 }
 
-.container .sidebar .profile .namertag h3 {
+.container .sidebar .profile .namertags h3 {
     font-weight: normal;
     font-size: 13px;
 }
 
+/*=========Links=========*/
+
 .container .sidebar .links {
-    position: absolute;
-    width: 348px;
-    height: 348px;
-    left: 40px;
-    top: 362px;
-    background-color: var(--bg-cards);
-    border-radius: 40px;
     display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    border-radius: 20px;
     padding: 35px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 .container .sidebar .links .link {
     display: flex;
     align-items: center;
     color: var(--text-color);
+    font-size: 15px;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+.container .sidebar .links .link:hover {
+    color: var(--bg-techs);
+    opacity: 0.9;
 }
 
 .container .sidebar .links .link img {
     margin-right: 20px;
 }
 
+/*=========Techs=========*/
+
 .container .sidebar .techs {
-    position: absolute;
-    width: 348px;
-    height: 208px;
-    left: 40px;
-    top: 740px;
-    border-radius: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     background-color: var(--bg-cards);
     padding: 20px;
+    width: 100%;
+    height: 15%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 
 .container .sidebar .techs .techs-title {
     color: var(--text-color);
     margin-left: 7px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .container .sidebar .techs .iconstechs {
     display: grid;
+    grid-gap: .8rem;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 50px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .container .sidebar .techs .iconstechs .tool {
-    width: 35px;
-    padding: 4px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--bg-techs);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: all 500ms ease;
 }
 
+/*=========Experiences=========*/
+
 .container .sidebar .experiences {
-    position: absolute;
-    width: 348px;
-    height: 349px;
-    left: 40px;
-    top: 978px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px;
-    border-radius: 40px;
-    background-color: var(--bg-cards);
     color: var(--text-color);
     font-size: 13px;
+    width: 100%;
+    height: 14%;
+    padding: 20px;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
 }
 
-.container .sidebar .experiences .experiences-title {
+.container .sidebar .experiences .experiences-title h1 {
+    color: var(--text-color);
     margin-left: 7px;
+    font-size: 22px;
 }
 
 .container .sidebar .experiences .experiences-content ul li {
-    padding: 7px;
     font-size: 15px;
+    margin: 2rem;
 }
 
+.container .sidebar .experiences .experiences-content ul li h4 {
+    font-weight: bold;
+}
+
+.container .sidebar .experiences .experiences-content ul li p {
+    opacity: 0.7;
+}
+
+/*=========Education=========*/
+
 .container .sidebar .education {
-    position: absolute;
-    width: 348px;
-    height: 352px;
-    left: 40px;
-    top: 1357px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px;
-    border-radius: 40px;
-    background-color: var(--bg-cards);
-    color: var(--text-color);
     font-size: 13px;
+    width: 100%;
+    height: 25%;
+    padding: 20px;
+    color: var(--text-color);
+    background-color: var(--bg-cards);
+    border-radius: 20px;
 }
 
 .container .sidebar .education .education-title {
+    color: var(--text-color);
     margin-left: 7px;
+    font-size: 11px;
 }
 
 .container .sidebar .education .education-content ul li {
-    padding: 7px;
     font-size: 15px;
+    margin: 2rem;
+}
+
+.container .sidebar .education .education-content ul li h4 {
+    font-weight: bold;
+}
+
+.container .sidebar .education .education-content ul li p {
+    opacity: 0.7;
 }
 
 /* ====main==== */
@@ -164,29 +198,27 @@
     width: 100%;
     height: 100%;
     background-color: var(--body-bg-color);
+    padding: 2rem;
 }
 
-.container .main .all-projects {
-    position: absolute;
-    width: 70%;
+.container .main .my-projects {
+    width: 100%;
     height: 86px;
-    left: 448px;
-    top: 40px;
-    background: #302F3D;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    background: #302F3D;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     color: var(--text-color);
+    padding: 20px;
 }
 
-.container .main .all-projects h1 {
+.container .main .my-projects h1 {
     font-size: 20px;
 }
 
-.container .main .all-projects h2 {
+.container .main .my-projects h2 {
     font-size: 14px;
     font-weight: normal;
 }
